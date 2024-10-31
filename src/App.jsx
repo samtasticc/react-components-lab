@@ -1,4 +1,7 @@
-const weatherForecasts = [
+import './App.css';
+
+const App = () => {
+  const weatherForecasts = [
   {
     day: 'Mon',
     img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/day.svg',
@@ -36,18 +39,11 @@ const weatherForecasts = [
   },
 ];
 
-const App = () => {
-
   return (
    <>
     <h1>Local Weather</h1>
     <section>
-      <div className="weather">
-        <h2>Day of the Week</h2>
-        <img src="" alt="" />
-        <p><span>conditions: </span>current weather conditions</p>
-        <p><span>time: </span>time of day</p>
-      </div>
+      {/* Weather data here */}
     </section>
   </>
 
