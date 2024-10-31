@@ -1,4 +1,4 @@
-import './WeatherForecast.css';
+import './WeatherForecasts.css';
 const WeatherForecasts = ({weatherForecast}) => {
     return(
         <div className="weather">
@@ -7,6 +7,7 @@ const WeatherForecasts = ({weatherForecast}) => {
             <p><span>conditions: </span>{weatherForecast.conditions}</p>
             <p><span>time: </span>{weatherForecast.time}</p>
         </div>
-
     )
 }
+
+export default WeatherForecasts;

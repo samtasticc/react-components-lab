@@ -1,6 +1,6 @@
 import { useState} from 'react'
 import './App.css';
-import WeatherForecasts from '.components/WeatherForecast/WeatherForecasts.jsx';
+import WeatherForecasts from './components/WeatherForecast/WeatherForecasts.jsx';
 
 const App = () => {
   const weatherForecasts = [
@@ -45,13 +45,11 @@ const App = () => {
    <>
     <h1>Local Weather</h1>
     <section>
-      {weatherForecasts.map((weatherForecasts) => (
-        <WeatherForecasts key={weatherForecasts.id} 
+      {weatherForecasts.map((weatherForecast) => (
+        <WeatherForecasts key={weatherForecast.id} weatherForecast={weatherForecast}/>
       ))}
     </section>
-  </>
-
-    
+  </>    
   );
 }
 
